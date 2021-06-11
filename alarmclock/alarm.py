@@ -11,7 +11,7 @@ def alarmset(n):
                 break
         else:
             print('Enter time as menioned format with 0s')
-
-print(datetime.now().strftime('%I:%M:%S'))
+            n = input('Set time as HH:MM:SS:(am/pm) (ex 08:24:35:am) :')
+print(datetime.now().strftime('%I:%M:%S:%p'))
 n=input('Set time as HH:MM:SS:(am/pm) (ex 08:24:35:am) :')
 alarmset(n)
