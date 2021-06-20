@@ -11,3 +11,12 @@ msg = MIMEMultipart()
 msg["Subject"] = sub
 msg.attach(MIMEText(body, "plain"))
 message = msg.as_string()
+subb = "OTP Verified " + u'\u263A'
+bod = """
+OTP Verified Successfully
+Thank You \u263A
+"""
+m = MIMEMultipart()
+m["Subject"] = subb
+m.attach(MIMEText(bod, "plain"))
+mes = m.as_string()
