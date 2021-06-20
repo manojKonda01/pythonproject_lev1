@@ -9,4 +9,5 @@ def authen():
             i=input("Enter your OTP again:")
             if i == otp_generator.OTP:
                 print("OTP verified Succesfully")
-        print("Reached Maximum Attemps")
+            if k == 2 and i!=otp_generator.OTP:
+                print("Reached Maximum Attempts")
